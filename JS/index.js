@@ -1,7 +1,8 @@
 let total = 0;
 
 function handleClickDiv(target) {
-    var purchaseBtn = document.getElementById('purchase-btn')
+    var purchaseBtn = document.getElementById('purchase-btn');
+    var couponBtn = document.getElementById('coupon-btn');
     const selectedItemContainer = document.getElementById('selected-items');
     const itemName = target.childNodes[3].childNodes[3].innerText;
     const li = document.createElement('li');
@@ -12,6 +13,9 @@ function handleClickDiv(target) {
     const totalPrice = document.getElementById('total-price').innerText = total;
     if(totalPrice > 0){
         purchaseBtn.removeAttribute('disabled');
+    }
+    if(totalPrice >= 200){
+        couponBtn.removeAttribute('disabled');
     }
 }
 
