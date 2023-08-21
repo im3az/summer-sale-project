@@ -49,7 +49,7 @@
     <main class="">
 
         <!-- Main container -->
-        <div class="flex flex-col lg:flex-row mt-5  lg:w-4/5 mx-auto mb-32" >
+        <div class="flex flex-col lg:flex-row mt-5  lg:w-4/5 mx-auto mb-32">
 
             <!-- Card container -->
             <div class=" lg:flex-1 ">
@@ -64,7 +64,8 @@
                 <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
 
                     <!-- first card -->
-                    <div onclick="handleClickDiv(this)" class="card w-80 bg-base-100 shadow-xl lg:h-[350px] mx-auto rounded-md mt-8">
+                    <div onclick="handleClickDiv(this)"
+                        class="card w-80 bg-base-100 shadow-xl lg:h-[350px] mx-auto rounded-md mt-8">
                         <figure><img class="bg-[#F8F8F8] py-5 px-20 mt-5 rounded-md" src="./images/prod1.png"
                                 alt="Shoes" />
                         </figure>
@@ -82,7 +83,8 @@
                     </div>
 
                     <!-- second card -->
-                    <div onclick="handleClickDiv(this)" class="card w-80 bg-base-100 shadow-xl lg:h-[350px] mx-auto rounded-md mt-8">
+                    <div onclick="handleClickDiv(this)"
+                        class="card w-80 bg-base-100 shadow-xl lg:h-[350px] mx-auto rounded-md mt-8">
                         <figure><img class="bg-[#F8F8F8] py-5 px-16 mt-5 rounded-md" src="./images/prod2.png"
                                 alt="Shoes" />
                         </figure>
@@ -102,7 +104,8 @@
 
 
                     <!-- third card -->
-                    <div onclick="handleClickDiv(this)" class="card w-80 bg-base-100 shadow-xl lg:h-[350px] mx-auto rounded-md mt-8">
+                    <div onclick="handleClickDiv(this)"
+                        class="card w-80 bg-base-100 shadow-xl lg:h-[350px] mx-auto rounded-md mt-8">
                         <figure><img class="bg-[#F8F8F8] py-5 px-16 mt-5 rounded-md" src="./images/prod3.png"
                                 alt="Shoes" />
                         </figure>
@@ -130,7 +133,8 @@
                 <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
                     <!-- fourth card -->
-                    <div onclick="handleClickDiv(this)" class="card w-80 bg-base-100 shadow-xl lg:h-[350px] mx-auto rounded-md mt-8">
+                    <div onclick="handleClickDiv(this)"
+                        class="card w-80 bg-base-100 shadow-xl lg:h-[350px] mx-auto rounded-md mt-8">
                         <figure><img class="bg-[#F8F8F8] py-5 px-16 mt-5 rounded-md" src="./images/prod4.png"
                                 alt="Shoes" />
                         </figure>
@@ -148,7 +152,8 @@
                     </div>
 
                     <!-- fifth card -->
-                    <div onclick="handleClickDiv(this)" class="card w-80 bg-base-100 shadow-xl lg:h-[350px] mx-auto rounded-md mt-8">
+                    <div onclick="handleClickDiv(this)"
+                        class="card w-80 bg-base-100 shadow-xl lg:h-[350px] mx-auto rounded-md mt-8">
                         <figure><img class="bg-[#F8F8F8] py-5 px-20 mt-5 rounded-md" src="./images/prod5.png"
                                 alt="Shoes" />
                         </figure>
@@ -166,7 +171,8 @@
                     </div>
 
                     <!-- sixth card -->
-                    <div onclick="handleClickDiv(this)" class="card w-80 bg-base-100 shadow-xl lg:h-[350px] mx-auto rounded-md mt-8">
+                    <div onclick="handleClickDiv(this)"
+                        class="card w-80 bg-base-100 shadow-xl lg:h-[350px] mx-auto rounded-md mt-8">
                         <figure><img class="bg-[#F8F8F8] py-5 px-16 mt-5 rounded-md" src="./images/prod6.png"
                                 alt="Shoes" />
                         </figure>
@@ -196,10 +202,12 @@
                     <h1 class="text-2xl font-medium">Have coupon?</h1>
 
                     <div class="relative">
-                        <input class=" w-2/3 border p-3 rounded-tl-lg rounded-bl-lg mt-3" type="text"
+                        <input id="coupon-value" class=" w-2/3 border p-3 rounded-tl-lg rounded-bl-lg mt-3" type="text"
                             placeholder="Coupon code">
 
-                        <button class=" absolute top-[12px] right-10 p-3  border bg-[#E527B2] hover:bg-pink-200 font-medium rounded-tr-lg rounded-br-lg text-white">
+                        <button
+                            class=" absolute top-[12px] right-10 p-3  border bg-[#E527B2] hover:bg-pink-200 font-medium rounded-tr-lg rounded-br-lg text-white"
+                            id="coupon-btn">
                             Apply
                         </button>
                     </div>
@@ -208,16 +216,24 @@
 
                 <!-- Total section -->
                 <div class="absolute bg-[#F8F8F8] px-3 py-5 rounded-lg text-2xl font-medium mt-8 w-[342px]">
+
                     <ol class="list-decimal ml-8" id="selected-items"></ol>
+
                     <div class="divider"></div>
+
                     <h1>Total price: <span id="total-price">00</span> TK</h1>
+
                     <h1 class="mt-4">Discount: 00 TK</h1>
+
                     <h1 class="mt-4">Total: 00 TK</h1>
+
                     <div class="divider"></div>
-                    <button
-                        class="relative top-11 left-10 btn btn-wide bg-[#E527B2] text-xl font-semibold text-white">Make
+
+                    <button id="purchase-btn"
+                        class="relative top-11 left-10 btn btn-wide bg-[#E527B2] text-xl font-semibold text-white" disabled>Make
                         Purchase
                     </button>
+
                 </div>
             </div>
         </div>
