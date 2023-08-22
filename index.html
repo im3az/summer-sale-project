@@ -235,16 +235,14 @@
                         Purchase
                     </button>
 
-                    <!-- Open the modal using ID.showModal() method -->
-                    
-                    <dialog id="my_modal_1" class="modal">
-                        <form method="dialog" class="modal-box text-center">
-                            <img src="./images/congo.png" alt="" class="w-1/3">
+                    <dialog id="my_modal_1" class="modal text-center">
+                        <form method="dialog" class="modal-box ">
+                            <img src="./images/congo.png" alt="" class="w-1/3 mx-auto">
                             <h3 class="font-bold text-lg">Congratulations</h3>
                             <p class="py-4">Your Purchase the product</p>
-                            <div class="modal-action">
-                                <!-- if there is a button in form, it will close the modal -->
-                                <button class="btn bg-[#E527B2] text-white ">Go Home</button>
+                            <div class="modal-action justify-center">
+                               
+                                <button onclick="goHome()" class="btn bg-[#E527B2] text-white ">Go Home</button>
                             </div>
                         </form>
                     </dialog>

@@ -16,6 +16,7 @@ function handleClickDiv(target) {
     var grandTotal = parseFloat(document.getElementById('grand-total').innerText);
     
     grandTotal = totalPrice - discountAmount;
+
     document.getElementById('grand-total').innerText = grandTotal;
     if (totalPrice > 0) {
         purchaseBtn.removeAttribute('disabled');
@@ -23,10 +24,11 @@ function handleClickDiv(target) {
     if (totalPrice >= 200) {
         couponBtn.removeAttribute('disabled');
     }
+
     document.getElementById('coupon-btn').addEventListener('click', function () {
         var couponInput = document.getElementById('coupon-input').value;
 
-        if (couponInput === 'SALE200') {
+        if (couponInput === 'SELL200') {
             discountAmount = totalPrice * 0.20;
             document.getElementById('discount-amount').innerText = discountAmount;
             grandTotal = totalPrice - discountAmount;
@@ -36,6 +38,10 @@ function handleClickDiv(target) {
         }
 
     })
+}
+
+function goHome(){
+    window.location.href = 'http://127.0.0.1:5500/index.html'
 }
 
 
